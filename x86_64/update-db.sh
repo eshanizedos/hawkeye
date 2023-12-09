@@ -3,24 +3,24 @@
 # Author : Eshan Roy
 # Author URI : https://github.com/eshanized
 
-rm snigdhaos-repository-hawkeye*
+rm hawkeye*
 
 echo "repo-add"
-repo-add -s -n -R snigdhaos-repository-hawkeye.db.tar.gz *.pkg.tar.zst
+repo-add -s -n -R hawkeye.db.tar.gz *.pkg.tar.zst
 
 sleep 1
 
-rm snigdhaos-repository-hawkeye.db
-rm snigdhaos-repository-hawkeye.db.sig
+rm hawkeye.db
+rm hawkeye.db.sig
 
-rm snigdhaos-repository-hawkeye.files
-rm snigdhaos-repository-hawkeye.files.sig
+rm hawkeye.files
+rm hawkeye.files.sig
 
-mv snigdhaos-repository-hawkeye.db.tar.gz snigdhaos-repository-hawkeye.db
-mv snigdhaos-repository-hawkeye.db.tar.gz.sig snigdhaos-repository-hawkeye.db.sig
+mv hawkeye.db.tar.gz hawkeye.db
+mv hawkeye.db.tar.gz.sig hawkeye.db.sig
 
-mv snigdhaos-repository-hawkeye.files.tar.gz snigdhaos-repository-hawkeye.files
-mv snigdhaos-repository-hawkeye.files.tar.gz.sig snigdhaos-repository-hawkeye.files.sig
+mv hawkeye.files.tar.gz hawkeye.files
+mv hawkeye.files.tar.gz.sig hawkeye.files.sig
 
 
 echo "Repo Updated!!"
